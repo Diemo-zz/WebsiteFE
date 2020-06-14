@@ -1,0 +1,30 @@
+.row {
+    background-color: aquamarine;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    background-color: orange;
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.header {
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+}
+
+.paragraph {
+    text-align: justify;
+    width: 100%;
+    padding: 1%;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin: 1%;
+}
