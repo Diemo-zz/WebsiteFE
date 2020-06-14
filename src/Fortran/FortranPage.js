@@ -1,4 +1,5 @@
 import React from "react";
+import './FortranNavBar.css'
 import './FortranPage.css'
 import {Nav, Navbar} from "react-bootstrap";
 import {Link, Route, Switch} from 'react-router-dom';

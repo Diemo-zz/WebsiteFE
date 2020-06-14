@@ -1,0 +1,12 @@
+.nav-link {
+    background-color: chartreuse;
+}
+
+.brand {
+    background-color: aliceblue;
+    padding: inherit;
+}
+
+.link {
+    padding: 5px;
+}
