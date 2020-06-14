@@ -11,8 +11,8 @@ const InterrnalFortranNavigation = () => {
     return (
         <div>
         <Navbar className={"fortran-nav-bar"}>
-            <Nav as={Link} to={"/fortran/home"} className={"fortran-brand"}>Home</Nav>
-            <Nav as={Link} to={"/fortran/install"} className={"fortran-brand"}>Installing Fortran</Nav>
+            <Nav as={Link} to={"/fortran/home"} className="fortran-link">Home</Nav>
+            <Nav as={Link} to={"/fortran/install"} className={"fortran-link"}>Installing Fortran</Nav>
         </Navbar>
         <Switch>
             <Route exact path={"/fortran/home"} component={FortranHome} />

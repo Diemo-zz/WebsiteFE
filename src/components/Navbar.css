@@ -1,12 +1,16 @@
 .nav-link {
-    background-color: chartreuse;
+    background-color: black;
 }
 
 .brand {
-    background-color: aliceblue;
-    padding: inherit;
+    margin: 0;
+    padding: 0px;
+    color: orangered;
+    opacity: 50%;
+    background-color: #61dafb;
 }
 
 .link {
     padding: 5px;
+    color: white;
 }
