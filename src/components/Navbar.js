@@ -11,10 +11,11 @@ import NavbarCollapse from "react-bootstrap/NavbarCollapse";
 import {FortranPage} from "../Fortran/FortranPage";
 
 
+
 export const Navigation = () => {
         return (
-            <div>
-        <div>
+            <React.Fragment>
+        <div className="nav-bar">
           <Navbar className="nav-link">
             <Navbar.Brand as={Link} to="/" className="brand">Home</Navbar.Brand>
               <NavbarCollapse>
@@ -25,7 +26,7 @@ export const Navigation = () => {
               </NavbarCollapse>
           </Navbar>
         </div>
-        <div>
+        <div className="nav-view">
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/secondpage' component={Secondpage}/>
@@ -37,6 +38,6 @@ export const Navigation = () => {
             }} />
           </Switch>
         </div>
-      </div>
+            </React.Fragment>
         )
 }

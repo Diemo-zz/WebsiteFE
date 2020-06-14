@@ -6,9 +6,6 @@ import paragraphs from './about_paragraphs.json'
 
 export const About = () => {
     return (
-        <React.Fragment>
-            <Header text={"About me"}/>
-            <Section paragraphs={paragraphs.paragraphs} />
-        </React.Fragment>
+            <Section paragraphs={paragraphs.paragraphs} header={"About me"}/>
     )
 }

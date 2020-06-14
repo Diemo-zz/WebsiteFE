@@ -18,21 +18,17 @@
     width: 100%;
     text-align: center;
     padding: 1%;
-    font-size: 4em;
+    font-size: 3em;
     background-image: url("https://apod.nasa.gov/apod/image/2005/ISS-Lighttrail-Reflection.jpg");
+    background-size: 100%;
 }
 
 .paragraph {
     text-align: justify;
-    width: 99%;
-    padding: 1%;
-    padding-bottom: 0;
-    padding-top: 0;
-    margin: 1%;
-    font-size: 1em;
+    width: 100%;
     color: white;
     text-shadow: 0px 0px 5px black;
-    font-family: arial;
+    padding: 1%;
 }
 
 
