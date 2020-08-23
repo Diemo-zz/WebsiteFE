@@ -21,7 +21,7 @@ const tutorial_style_box = {
     "display": "flex",
     "flexWrap": "wrap",
     "margin": 0,
-    "white-space": "pre-wrap",
+    "whiteSpace": "pre-wrap",
     "resize": "vertical",
     "overflow": "hidden"
 }
@@ -59,7 +59,7 @@ const CodeAndResults = () => {
 
 export const TutorialPage = () => {
     return (<React.Fragment>
-        <Header text= "Tutorial Page"/>
+        <Header text= "Tutorial Page" image_used={}/>
         <Paragraph text={"SOME TECZ"}/>
         <Paragraph text={"SOME TECZ2"}/>
         <Paragraph text={"SOME TECZ3"}/>

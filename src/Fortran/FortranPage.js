@@ -6,6 +6,7 @@ import {Link, Route, Switch} from 'react-router-dom';
 import {FortranHome} from "./Components/HomePage";
 import {InstallingFortran} from "./Components/InstallingFortran";
 import {TutorialPage} from "./Components/TutorialPage";
+import {Header} from "./Components/Header";
 
 const FortranNotFound = () => {
     return (<div>
