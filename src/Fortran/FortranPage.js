@@ -7,6 +7,12 @@ import {FortranHome} from "./Components/HomePage";
 import {InstallingFortran} from "./Components/InstallingFortran";
 import {TutorialPage} from "./Components/TutorialPage";
 
+const FortranNotFound = () => {
+    return (<div>
+        404 Not Found
+    </div>)
+}
+
 
 const InterrnalFortranNavigation = () => {
     return (
@@ -20,6 +26,7 @@ const InterrnalFortranNavigation = () => {
             <Route exact path={"/fortran/home"} component={FortranHome} />
             <Route exact path={"/fortran/install"} component={InstallingFortran} />
             <Route exact path={"/fortran/tutorial"} component={TutorialPage} />
+            <Route path={"/fortran"} component={FortranNotFound} />
         </Switch>
         </div>
 

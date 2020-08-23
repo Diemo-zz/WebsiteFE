@@ -11,6 +11,13 @@ import NavbarCollapse from "react-bootstrap/NavbarCollapse";
 import {FortranPage} from "../Fortran/FortranPage";
 
 
+const NotFound = () => {
+    return (
+        <div>
+            Unfortunately I can't seem to find that page. Maybe I haven't made it yet?
+        </div>
+    )
+}
 
 export const Navigation = () => {
         return (
@@ -32,10 +39,8 @@ export const Navigation = () => {
             <Route exact path='/secondpage' component={Secondpage}/>
             <Route exact path='/contact' component={ContactPage}/>
             <Route exact path='/about' component={About}/>
-            <Route exact pate={'/fortran'} component={FortranPage} />
-            <Route render={function () {
-              return <p>Not found</p>
-            }} />
+            <Route path={'/fortran'} component={FortranPage} />
+            <Route render={NotFound} />
           </Switch>
         </div>
             </React.Fragment>
