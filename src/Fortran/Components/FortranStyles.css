@@ -7,7 +7,6 @@
 
 .column {
     background-color: orange;
-    width: 49%;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
