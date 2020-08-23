@@ -59,7 +59,7 @@ const CodeAndResults = () => {
 
 export const TutorialPage = () => {
     return (<React.Fragment>
-        <Header text= "Tutorial Page" image_used={}/>
+        <Header text= "Tutorial Page" image_used={"https://apod.nasa.gov/apod/image/2005/ISS-Lighttrail-Reflection.jpg"}/>
         <Paragraph text={"SOME TECZ"}/>
         <Paragraph text={"SOME TECZ2"}/>
         <Paragraph text={"SOME TECZ3"}/>
