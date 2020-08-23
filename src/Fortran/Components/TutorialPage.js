@@ -17,49 +17,43 @@ const text_as_json = [
     }
     ]
 const tutorial_style_box = {
-    "backgroundColor": "red",
+    "backgroundColor": "white",
     "display": "flex",
     "flexWrap": "wrap",
     "margin": 0,
-    "width": "100%",
-    "white-space": "pre-wrap"
+    "white-space": "pre-wrap",
+    "resize": "vertical",
+    "overflow": "hidden"
 }
 
-const TextBox = () => {
+const CodeAndResults = () => {
     const [value, setValue] = useState("Blah blah blah")
 
-    var id = Math.floor(1000000*Math.random())
-    id = "TextBox" + id
+    const id = Math.floor(1000000*Math.random())
+    const text_id = "TextBox" + id
+    const show_id = "Show" + id
 
     const handleChange = (event) => {
         event.preventDefault()
-        const changed_value = document.getElementById(id).value
-        console.log("changed value")
+        const el = document.getElementById(text_id)
+        const changed_value = el.value
         setValue(changed_value)
     }
-    const input_area_style = {...tutorial_style_box, width: "50%", margin: 1, color: "white", backgroundColor: "black"}
-    const text_area_style = {...tutorial_style_box, width: "50%", margin: 1}
+    //setInputStyle({...tutorial_style_box, width: "50%", margin: 1, color: "white", backgroundColor: "black"})
+    //const input_area_style =
+    const text_style = {...tutorial_style_box, width: "50%", margin: 1}
+    const text_style3 = {...tutorial_style_box, width: "0%", margin: 1, display: "hidden"}
+    const input_style = {...tutorial_style_box, width: "50%", margin: 1, color: "white", backgroundColor: "black"}
 
     return (
         <React.Fragment>
             <div style={{display: "flex"}}>
-            <textarea value = {value} onChange={handleChange} id={id} style={input_area_style}/>
-            <div style = {text_area_style}> {value}</div>
+            <textarea value = {value} onChange={handleChange} id={text_id} style={input_style}/>
+            <div style = {text_style3} id={show_id}> {value}</div>
+            <div style={text_style} id={show_id + "show"}> Not connected up yet</div>
             </div>
-
         </React.Fragment>
     )
-}
-
-const CodeAndResults = () => {
-
-    return (
-        <React.Fragment>
-            <TextBox />
-            <Row cells = {text_as_json}/>
-        </React.Fragment>
-    )
-
 }
 
 
@@ -69,6 +63,9 @@ export const TutorialPage = () => {
         <Paragraph text={"SOME TECZ"}/>
         <Paragraph text={"SOME TECZ2"}/>
         <Paragraph text={"SOME TECZ3"}/>
+        <CodeAndResults/>
+        <Paragraph text={"fdaklsfja"}/>
+        <Paragraph text={"more pare"}/>
         <CodeAndResults/>
 
     </React.Fragment>)
