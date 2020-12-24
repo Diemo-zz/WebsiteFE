@@ -1,12 +1,12 @@
 .nav-link {
     background-color: black;
-    opacity: 50%;
+    opacity: 100%;
 }
 
 .brand {
     margin: 0;
     padding: 0px;
-    color: orangered;
+    color: blue;
     opacity: 50%;
     background-color: #61dafb;
 }
@@ -17,7 +17,7 @@
 }
 
 .nav-bar {
-    background-color: green;
+    background-color: white;
     height: 5%;
     width: 100%;
     overflow: hidden;
@@ -26,7 +26,7 @@
 
 .nav-view {
     height: 95%;
-    background-color: chartreuse;
+    background-color: black;
     position: absolute;
     left: 0;
     top: 5%;

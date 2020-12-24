@@ -11,11 +11,13 @@ Don't be surprised if certain things don't work.
 `
 
 
-export const Home = () => (
-    <React.Fragment>
-        <div>
-            <Header text="THIS IS THE HEADER TEXT"/>
-            <Paragraph text={homepage}/>
-        </div>
-    </React.Fragment>
-)
+export const Home = () => {
+    return (
+        <React.Fragment>
+            <div>
+                <Header text="THIS IS THE HEADER TEXT"/>
+                <Paragraph text={homepage}/>
+            </div>
+        </React.Fragment>
+    )
+}

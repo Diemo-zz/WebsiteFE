@@ -15,7 +15,7 @@ const FortranNotFound = () => {
 }
 
 
-const InterrnalFortranNavigation = () => {
+const InternalFortranNavigation = () => {
     return (
         <div>
         <Navbar className={"fortran-nav-bar"}>
@@ -37,7 +37,7 @@ const InterrnalFortranNavigation = () => {
 export const FortranPage = () => {
     return (
         <React.Fragment>
-            <InterrnalFortranNavigation />
+            <InternalFortranNavigation />
         </React.Fragment>
     )
 }
